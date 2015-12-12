@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/Main"
+    android:background="@drawable/gif"
+    android:onClick="onClickSound1"
+    android:contextClickable="false">
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space" />
+
+    <ImageButton
+
+        android:id="@+id/imageButton"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/gif"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView">/
+
+    </ImageButton>
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textClock"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@color/background_floating_material_dark"
+        android:text="Reactions 4 Interactions"
+        android:id="@+id/textView"
+        android:layout_below="@+id/textClock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About us"
+        android:id="@+id/button2"
+        android:layout_below="@+id/imageButton"
+        android:layout_toLeftOf="@+id/textClock"
+        android:layout_toStartOf="@+id/textClock"
+        android:textStyle="italic"
+        android:background="@drawable/densmore" />
+
+    <ZoomButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOW IT WORKS"
+        android:id="@+id/button3"
+        android:adjustViewBounds="true"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_toEndOf="@+id/button2" />
+
+    <SurfaceView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/surfaceView"
+        android:layout_alignBottom="@+id/imageButton"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2" />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:layout_alignTop="@+id/textClock"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

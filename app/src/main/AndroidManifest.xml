@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.classc.reactions" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Reactions 4 Interactions"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="Reactions 4 Interactions" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FirstScreenActivity"></activity>
+        <activity android:name=".About"></activity>
+        <activity android:name=".Categories"></activity>
+        <activity android:name=".Crying"></activity>
+        <activity android:name=".HumanNature"></activity>
+        <activity android:name=".Works"></activity>
+        <activity android:name=".Phrases"></activity>
+        <activity android:name=".Laughing"></activity>
+    </application>
+
+</manifest>

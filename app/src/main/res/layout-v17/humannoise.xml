@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/Main"
+    android:background="@android:color/holo_purple"
+    android:onClick="onClickSound1"
+    android:contextClickable="false">
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space4" />
+
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/categories"
+        android:background="@drawable/phaseface"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="Yawning"
+        android:id="@+id/what"
+        android:layout_below="@+id/categories"
+        android:layout_alignLeft="@+id/wtf"
+        android:layout_alignStart="@+id/wtf" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="Coughing"
+        android:id="@+id/lol"
+        android:layout_alignTop="@+id/what"
+        android:layout_toRightOf="@+id/space4"
+        android:layout_toEndOf="@+id/space4" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="Sneezing"
+        android:id="@+id/wtf"
+        android:layout_below="@+id/what"
+        android:layout_toLeftOf="@+id/space4"
+        android:layout_toStartOf="@+id/space4"
+        android:layout_marginTop="13dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="Snorting"
+        android:id="@+id/snort"
+        android:layout_alignTop="@+id/wtf"
+        android:layout_alignLeft="@+id/lol"
+        android:layout_alignStart="@+id/lol" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="Burping"
+        android:id="@+id/burp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/wtf"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
